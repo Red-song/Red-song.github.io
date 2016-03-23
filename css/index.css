@@ -1,0 +1,232 @@
+body,ul,li{
+	margin:0;
+	padding:0;
+	font-size:16px;
+	list-style:none;
+
+}
+body{
+	background: #ccc
+}
+nav.nav1{
+	width:100%;
+	height:60px;
+    background:#383836;
+    position: fixed;
+    z-index: 100;
+}
+.xiala{
+	width:10%;
+	background: red;
+	float:right;
+}
+nav.nav2{
+	position: fixed;
+	width:100%;
+	height:60px;
+	background:#383836;
+	z-index: 90;
+}
+.xiala{
+	display: none;
+}
+input{
+	display:none;
+}
+.links{
+	width:30%;
+	height:100%;
+	float:right;
+}
+.link{
+	width:25%;
+	height:100%;
+	float:left;
+    color:white;
+    text-align: center;
+    line-height: 60px;
+    transition:all 0.6s ease 0s;
+}
+nav .link a{
+	text-decoration: none;
+	color:white;
+}
+.link:hover,label:nth-child(1):hover,label:nth-child(2):hover,label:nth-child(3):hover{
+	background:#546825;
+}
+.banner{
+	width:100%;
+	height:600px;
+	background:url(../images/banner.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	font-size:30px;
+	color:white;
+}
+.one,.two{
+	width:50%;
+	position: absolute;
+	left:10%;
+	bottom:120px;
+	animation-name:pao;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+}
+.two{
+	bottom:70px;
+	animation-name:pao;
+	animation-delay:3s;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+}
+.title{
+	width:100%;
+	height:40px;
+	margin:10px auto;
+	text-align: center;
+	line-height: 40px;
+	color:#546825;
+}
+.zuopin{
+	height:150px;
+	padding:2px;
+	margin:5px 0;
+}
+.fenlei{
+ background:#383836;
+ color:white;
+}
+label{
+	display:block;
+	width:33%;
+	height:30px;
+	text-align: center;
+	line-height:30px;
+}
+.zuopin a{
+	display: block;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	line-height: 150px;
+	transition:all 0.6s ease 0s;
+	text-decoration: none;
+	font-size:20px;
+	color:white;
+	background: #383836;
+	opacity: 0.8;
+}
+.zuopin a:hover{
+	transform:scale(0.8,0.8);
+}
+
+#input1:checked~.row li[pro=true]{
+	display:none;
+}
+#input1:checked~.row li[game=true]{
+	display:none;
+}
+#input2:checked~.row li[web=true]{
+	display:none;
+}
+#input2:checked~.row li[game=true]{
+	display:none;
+}
+#input3:checked~.row li[web=true]{
+	display:none;
+}
+#input3:checked~.row li[pro=true]{
+	display:none;
+}
+.skill{
+	position: relative;
+	width:100%;
+	height:300px;
+}
+.xinxi{
+	width:100%;
+	height:260px;
+}
+.yuan{
+	display: inline-block;
+	width:50%;
+	height:50;
+	margin:2px;
+	background: #546825;
+}
+.bai1,.bai2,.bai3,.bai4{
+	width:95%;
+	height:100%;
+	background: #383836;
+	line-height:50px; 
+	color:white;
+}
+.bai2{
+	width:90%;
+}
+.bai3{
+	width:85%;
+}
+.bai4{
+	width:75%;
+}
+.man{
+	width:0px;
+	height:100%;
+}
+.hua{
+	width:20%;
+	height:70%;
+	position: absolute;
+	top:50px;
+	right:200px;
+	background: #383836;
+	color:white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 50px;
+	animation-duration:2s;
+	animation-name:bai;
+	transform-origin:top center;
+	animation-timing-function:linear;
+	animation-delay:0s;
+    animation-iteration-count:infinite;
+}
+.contact{
+	width:100%;
+	height:100px;
+	background:#383836;
+	padding-top: 20px
+}
+.phone,.email{
+	color:white;
+	width:100%;
+	height:50%;
+	text-align: center;
+}
+@keyframes bai{
+  0%,50%,100%{
+  	transform:rotateZ(0deg);
+  }
+   25%{
+  	transform:rotateZ(45deg);
+  }
+  75%{
+  	transform:rotateZ(-45deg);
+  }
+}
+
+@keyframes pao{
+  0%{
+  	transform:translateX(-800px);
+  }
+   50%{
+    	transform:translateX(0);
+    } 
+    99.9%{
+    	transform:translateX(2000px);
+    }
+    100%{
+    	transform:translateX(-1000px);
+    }
+}
