@@ -62,6 +62,7 @@ nav .link a{
 	position: relative;
 	font-size:30px;
 	color:white;
+	overflow: hidden;
 }
 .one,.two{
 	width:50%;
