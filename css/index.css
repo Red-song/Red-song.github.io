@@ -114,30 +114,23 @@ label{
 	text-decoration: none;
 	font-size:20px;
 	color:white;
-	background: #383836;
+	background: #546825;
 	opacity: 0.8;
 }
 .zuopin a:hover{
 	transform:scale(0.8,0.8);
 }
-
-#input1:checked~.row li[pro=true]{
-	display:none;
+#input1:checked~.row li a,#input1:checked~.fenlei label{
+	transition:all 0.6s ease 0s;
 }
-#input1:checked~.row li[game=true]{
-	display:none;
+#input1:checked~.row li[web=true] a,#input1:checked~.fenlei #lable1{
+	background:#B09B99;
 }
-#input2:checked~.row li[web=true]{
-	display:none;
+#input2:checked~.row li[pro=true] a,#input2:checked~.fenlei #lable2{
+	background:#B07F8A;
 }
-#input2:checked~.row li[game=true]{
-	display:none;
-}
-#input3:checked~.row li[web=true]{
-	display:none;
-}
-#input3:checked~.row li[pro=true]{
-	display:none;
+#input3:checked~.row li[game=true] a,#input3:checked~.fenlei #lable3{
+	background:#916469;
 }
 .skill{
 	position: relative;
